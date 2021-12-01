@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            dom manupulations
+        </title>
+        <script type="text/javascript">
+        function fn1()
+        {
+            var actualUsername=document.getElementById("text1").value;
+            var actualPassword=document.getElementById("text2").value;
+
+            var expectedUsername="Rajandeep";
+            var expectedPassword="user@123";        
+
+            if (actualUsername==expectedUsername && actualPassword==expectedPassword)
+            {
+                alert("password and user name matches");
+            
+            }
+            else{
+                alert("password or username is incorrect")
+            }
+            
+        }
+       
+            
+        </script>
+        
+    </head>
+    <body>
+       <input id="text1" placeholder="username">
+       <br>
+       <input type="password" id="text2" placeholder="password">
+       <br>
+       <button onclick="fn1()" id = "btnl">Click me</button>
+    </body>
+</html>
